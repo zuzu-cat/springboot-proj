@@ -1,0 +1,125 @@
+{
+  "info": {
+	"_postman_id": "7845d037-8441-4f75-937f-3d3f662e87ca",
+	"name": "university",
+	"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+	{
+	  "name": "student",
+	  "item": [
+		{
+		  "name": "getStudentById",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/api/students/79f70291-cc22-4980-aa8c-0a410b777f47",
+			  "protocol": "http",
+			  "host": [
+				"localhost"
+			  ],
+			  "port": "8080",
+			  "path": [
+				"api",
+				"students",
+				"79f70291-cc22-4980-aa8c-0a410b777f47"
+			  ]
+			}
+		  },
+		  "response": []
+		}
+	  ]
+	},
+	{
+	  "name": "teacher",
+	  "item": [
+		{
+		  "name": "getTeacherById",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/api/teachers/15e7e4ce-44ec-486a-bb1f-cdc6ce533e25",
+			  "protocol": "http",
+			  "host": [
+				"localhost"
+			  ],
+			  "port": "8080",
+			  "path": [
+				"api",
+				"teachers",
+				"15e7e4ce-44ec-486a-bb1f-cdc6ce533e25"
+			  ]
+			}
+		  },
+		  "response": []
+		}
+	  ]
+	},
+	{
+	  "name": "course",
+	  "item": [
+		{
+		  "name": "getCourseById",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/api/courses/f8ce32ec-3374-46d9-b32c-59c26032aaea",
+			  "protocol": "http",
+			  "host": [
+				"localhost"
+			  ],
+			  "port": "8080",
+			  "path": [
+				"api",
+				"courses",
+				"f8ce32ec-3374-46d9-b32c-59c26032aaea"
+			  ]
+			}
+		  },
+		  "response": []
+		},
+		{
+		  "name": "getCoursesBySubjectId",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/api/courses?subjectId=7e569bab-dd07-459b-af54-69e5ea6cbfa3&",
+			  "protocol": "http",
+			  "host": [
+				"localhost"
+			  ],
+			  "port": "8080",
+			  "path": [
+				"api",
+				"courses"
+			  ],
+			  "query": [
+				{
+				  "key": "subjectId",
+				  "value": "7e569bab-dd07-459b-af54-69e5ea6cbfa3"
+				},
+				{
+				  "key": "",
+				  "value": null
+				}
+			  ]
+			}
+		  },
+		  "response": []
+		}
+	  ]
+	},
+	{
+	  "name": "New Request",
+	  "request": {
+		"method": "GET",
+		"header": []
+	  },
+	  "response": []
+	}
+  ]
+}

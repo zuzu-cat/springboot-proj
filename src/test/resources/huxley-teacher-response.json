@@ -1,0 +1,11 @@
+{
+  "id": "15e7e4ce-44ec-486a-bb1f-cdc6ce533e25",
+  "firstname": "Aldous",
+  "lastname": "Huxley",
+  "email": "aldous.huxley@gmail.com",
+  "birthdate": "1894-06-26",
+  "courses": [
+	"K1024",
+	"K1025"
+  ]
+}

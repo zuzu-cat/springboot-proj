@@ -1,0 +1,19 @@
+{
+  "code": "K1024",
+  "id": "f8ce32ec-3374-46d9-b32c-59c26032aaea",
+  "teacher": {
+	"id": "15e7e4ce-44ec-486a-bb1f-cdc6ce533e25",
+	"firstname": "Aldous",
+	"lastname": "Huxley",
+	"email": "aldous.huxley@gmail.com",
+	"birthdate": "1894-06-26",
+	"courses": [
+	  "K1024",
+	  "K1025"
+	]
+  },
+  "subject": {
+	"id": "7e569bab-dd07-459b-af54-69e5ea6cbfa3",
+	"name": "math"
+  }
+}

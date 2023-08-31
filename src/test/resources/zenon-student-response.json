@@ -1,0 +1,46 @@
+{
+  "id": "79f70291-cc22-4980-aa8c-0a410b777f47",
+  "firstname": "Zenon",
+  "lastname": "De Citio",
+  "email": "zenon.de.citio@gmail.com",
+  "birthdate": "0471-09-01",
+  "courses": [
+	{
+	  "code": "K1024",
+	  "id": "f8ce32ec-3374-46d9-b32c-59c26032aaea",
+	  "teacher": {
+		"id": "15e7e4ce-44ec-486a-bb1f-cdc6ce533e25",
+		"firstname": "Aldous",
+		"lastname": "Huxley",
+		"email": "aldous.huxley@gmail.com",
+		"birthdate": "1894-06-26",
+		"courses": [
+		  "K1024",
+		  "K1025"
+		]
+	  },
+	  "subject": {
+		"id": "7e569bab-dd07-459b-af54-69e5ea6cbfa3",
+		"name": "math"
+	  }
+	},
+	{
+	  "code": "Z1024",
+	  "id": "23be7032-8779-493e-8a31-06d9e1bd569e",
+	  "teacher": {
+		"id": "f0c4b7ff-3214-4323-992d-f73dacbd79d6",
+		"firstname": "Ray",
+		"lastname": "Bradbury",
+		"email": "ray.bradbury@gmail.com",
+		"birthdate": "1920-08-22",
+		"courses": [
+		  "Z1024"
+		]
+	  },
+	  "subject": {
+		"id": "a00fcd84-3c47-4cf9-b7fa-0f47e315c14b",
+		"name": "computer science"
+	  }
+	}
+  ]
+}

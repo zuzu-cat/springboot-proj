@@ -1,5 +1,7 @@
 package com.example.university.controller;
 
+import java.time.LocalDate;
+
 import org.junit.jupiter.api.Test;
 
 public class CourseIntegrationTest extends BaseIntegrationTest {
@@ -22,12 +24,13 @@ public class CourseIntegrationTest extends BaseIntegrationTest {
 
     @Test
     public void getCoursesBySubjectId_subjectDoesNotExist_throwsNotFoundError() throws Exception {
-        assertNotFoundErrorWhenGettingByNonExistentId("?subject_id=%s");
+        assertNotFoundErrorWhenGettingByNonExistentId("?subjectId=%s");
     }
 
     @Test
     public void getCoursesBySubjectId_courseExists_returnsCourses() throws Exception {
-        var path = buildURI(getBasePath(), "?subject_id=%s", MATH_SUBJECT_ID);
+        var path = buildURI(getBasePath(), "?subjectId=%s", MATH_SUBJECT_ID);
+        //this will fail when you run in asia since the localdate will be off by 1 day
         getByIdWithPath(path, MATH_COURSES_RESPONSE_PATH);
     }
 

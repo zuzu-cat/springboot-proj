@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -28,7 +29,7 @@ public class Course {
     @Column
     private String code;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
 
@@ -36,6 +37,8 @@ public class Course {
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
+    //potentially define this explicitly as a lazy fetch type. It should default to lazy but 
+    //this could depend on the hyberid version. It also could depend on the many to many/many to one relationship
     @ManyToMany
     @JoinTable(
         name = "student_course",

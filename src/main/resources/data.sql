@@ -8,7 +8,7 @@ VALUES ('15e7e4ce-44ec-486a-bb1f-cdc6ce533e25', 'Aldous', 'Huxley', '42 Bourbon 
         'aldous.huxley@gmail.com', 'newBraveWorld', '1894-06-26');
 INSERT INTO teacher (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('f0c4b7ff-3214-4323-992d-f73dacbd79d6', 'Ray', 'Bradbury', '451 Bourbon st', '70130', 'LA',
-        'ray.bradbury@gmail.com', 'Farenheit451', '1920-08-22');
+        'ray.bradbury@gmail.com', 'Farenheit451','1920-08-22');
 
 INSERT INTO student (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('3b1ac759-b616-49d4-9914-92428cd7e68f', 'John', 'Socrates', '470 Astoria Blvd', '11102', 'NY',

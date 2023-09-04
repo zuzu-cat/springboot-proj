@@ -16,6 +16,7 @@ public interface CourseApi {
     @GetMapping("{courseId}")
     CourseDto getCourseById(@PathVariable UUID courseId);
 
+    //we changed the code here from subject_id to subjectId
     @GetMapping
-    List<CourseDto> getCoursesBySubjectId(@RequestParam(name = "subject_id") UUID subjectId);
+    List<CourseDto> getCoursesBySubjectId(@RequestParam(name = "subjectId") UUID subjectId);
 }

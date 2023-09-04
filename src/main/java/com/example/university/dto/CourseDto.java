@@ -35,12 +35,15 @@ public class CourseDto {
 
     private SubjectDto subject;
 
+    //this is something kind of weird in the DTO class, you can't map relationships in DTO classes
+    //this makes no sense at all, we should remve the annotations
     @ManyToMany
     @JoinTable(
         name = "student_course",
         joinColumns = @JoinColumn(name = "course_id"),
         inverseJoinColumns = @JoinColumn(name = "student_id"))
-    private List<Student> students;
+    // this should be a list of student DTOs, we can't be returning models objects in DTO
+    private List<StudentDto> students;
 
     public static List<CourseDto> fromCourses(List<Course> courses) {
         return Optional.ofNullable(courses)

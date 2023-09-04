@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.extern.java.Log;
 
 import static java.util.stream.Collectors.toList;
 
@@ -21,6 +22,7 @@ import static java.util.stream.Collectors.toList;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Log
 public class TeacherDto {
 
     private UUID id;
@@ -30,12 +32,15 @@ public class TeacherDto {
 
     private List<String> courses;
 
+    //Here's we're only getting the course codes and not the course object 
     public static TeacherDto fromTeacher(Teacher teacher) {
         return TeacherDto.builder()
                          .id(teacher.getId())
                          .userDetails(UserDetailsDto.fromUserDetails(teacher.getUserDetails()))
+                        // we return the course id here because if we return the course DTO then it would have a ciruclar dependency as teacher DTOs have a course Object
                          .courses(Optional.ofNullable(teacher.getCourses()).orElseGet(ArrayList::new).stream().map(
-                             Course::getCode).collect(toList()))
+                            Course::getCode).collect(toList()))
+
                          .build();
     }
 }

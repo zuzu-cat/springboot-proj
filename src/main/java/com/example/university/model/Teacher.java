@@ -26,6 +26,6 @@ public class Teacher {
     @Embedded
     private UserDetails userDetails;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "teacher")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "teacher")
     private List<Course> courses;
 }

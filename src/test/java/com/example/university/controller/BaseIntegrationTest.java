@@ -45,7 +45,7 @@ public abstract class BaseIntegrationTest {
 
     protected ResultActions getByIdWithPath(String path, String expectedJsonPath) throws Exception {
         var expectedJson = loadTextFileFromResources(expectedJsonPath);
-
+        //make sure localdate conversion to 
         return mvc.perform(get(path)
                                .contentType(MediaType.APPLICATION_JSON))
                   .andExpect(status().isOk())

@@ -9,13 +9,13 @@ VALUES ('15e7e4ce-44ec-486a-bb1f-cdc6ce533e25', 'Aldous', 'Huxley', '42 Bourbon 
 INSERT INTO teacher (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('f0c4b7ff-3214-4323-992d-f73dacbd79d6', 'Ray', 'Bradbury', '451 Bourbon st', '70130', 'LA',
         'ray.bradbury@gmail.com', 'Farenheit451','1920-08-22');
-
+-- having dates that are BC will cuase weirdness in that they'll all get converted to 0XXX-XX-31
 INSERT INTO student (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('3b1ac759-b616-49d4-9914-92428cd7e68f', 'John', 'Socrates', '470 Astoria Blvd', '11102', 'NY',
         'socrates@gmail.com', 'cicuta', '-300-08-27');
 INSERT INTO student (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('17fa938e-e70f-42b8-b764-c8e22335b2bd', 'Nik', 'Platon', '470 Astoria Blvd', '11102', 'NY', 'platon@gmail.com',
-        'theoryOfForms', '-427-08-27');
+        'theoryOfForms', '-427-08-01');
 INSERT INTO student (id, firstname, lastname, address, zip_code, state, email, password, birthdate)
 VALUES ('79f70291-cc22-4980-aa8c-0a410b777f47', 'Zenon', 'De Citio', '300 Astoria Blvd', '11102', 'NY',
         'zenon.de.citio@gmail.com', 'stoicism', '-470-08-27');

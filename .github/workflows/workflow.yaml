@@ -4,8 +4,6 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      TZ: "America/Los_Angeles"
     steps:
       - uses: actions/checkout@v3
       # This step uses the `actions/setup-java` action to configure the Eclipse Temurin (Java) 17 JDK by Eclipse Adoptium.

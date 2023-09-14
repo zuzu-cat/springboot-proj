@@ -10,6 +10,7 @@
 
 5. We should have monitoring and logging. Specifically we can monitor CPU, disk, and memory usage. We should also be aware of API response time, throughput and also db performance like query performance. 
 
-student and teacher are basically the same entity, we could change it, but ultimatly because there's a circular dependency between course and teachers since courses api returns teacher info but not student info
+6. The storage of BC dates seems to be not working as in dates stored as "-133-04-04" gets converted to "0133-04-31" when read. We can resolve this with having an offset year of 1000 and make sure to add 1000 to the date when storing it and subtracting 1000 when displaying the data.
 
-we should add monitoring 
+7. student and teacher are basically the same entity, we could change it, but ultimatly because there's a circular dependency between course and teachers since courses api returns teacher info but not student info
+

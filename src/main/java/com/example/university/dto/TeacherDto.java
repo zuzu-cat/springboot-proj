@@ -40,7 +40,7 @@ public class TeacherDto {
                         // we return the course id here because if we return the course DTO then it would have a ciruclar dependency as teacher DTOs have a course Object
                          .courses(Optional.ofNullable(teacher.getCourses()).orElseGet(ArrayList::new).stream().map(
                             Course::getCode).collect(toList()))
-
+                         //.courses(CourseDto.fromCourses(teacher.getCourses()))
                          .build();
     }
 }

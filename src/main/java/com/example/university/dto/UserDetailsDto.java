@@ -19,7 +19,7 @@ public class UserDetailsDto {
 
     private String email;
 
-    private LocalDate birthdate;
+    private String birthdate;
 
     public static UserDetailsDto fromUserDetails(UserDetails userDetails) {
         return UserDetailsDto.builder()

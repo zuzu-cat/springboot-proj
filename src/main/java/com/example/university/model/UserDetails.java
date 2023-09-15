@@ -24,5 +24,5 @@ public class UserDetails {
 
     private String password;
 
-    private LocalDate birthdate;
+    private String birthdate;
 }
